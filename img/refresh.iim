@@ -1,0 +1,14 @@
+SET !FILESTOPWATCH myresults.csv 
+STOPWATCH ID=total1 
+URL GOTO=http://localhost/faucetbox/
+STOPWATCH ID=total1
+'Clear cache and reload
+CLEAR
+STOPWATCH ID=total2 
+REFRESH 
+STOPWATCH ID=total2
+'Clear cache and reload
+CLEAR
+STOPWATCH ID=total3 
+REFRESH 
+STOPWATCH ID=total3 
